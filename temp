@@ -1,0 +1,13 @@
+echo " <script language = 'javascript'
+      src = "js/index.js" type = "text/javascript">
+
+      var somevar = <?=$username?>;
+      logedIn(somevar);
+
+      </script> ";
+
+
+      <!-- <script src="js/index.js" type="text/javascript">
+        var temp = <?=$username?>;
+        logedIn(temp);
+      </script> -->

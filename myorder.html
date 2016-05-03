@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+<h2>My Order</h2>
+<br>
+<table class="table table-bordered">
+<tbody id ="order_table" >
+    <tr class="text-center">
+        <td>Hamburger</td>
+        <td id="quantity"><div class="form-inline">
+            <button class="plusminus btn btn-default" id="decrease_quantity0">-</button>
+            <input class="form-control" type="text" size="2" value="1" id = "amount0">
+            <button class="plusminus btn btn-default" id="increase_quantity0">+</button><button id = "remove_item0"> Remove</button>
+        </div></td>
+        <td><a id = "price0"></a></td>
+    </tr>
+
+    </tbody>
+
+</table>
+
+<div class= "text-right">
+    <div id = "totalprice"><b>Your Total : 500 Baht.</b></div>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <br>
+
+    <button type="button" class="btn btn-info" id="more_food">Add More Food</button>
+
+    <button type ="button" class="btn btn-warning" id = "detail_bottom">Checkout</button>
+
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</div>
+
+<script src="js/myorder.js"></script>

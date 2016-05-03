@@ -1,0 +1,9 @@
+.plusminus {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.remove-button {
+    color: red;
+    font-size : 5px;
+}

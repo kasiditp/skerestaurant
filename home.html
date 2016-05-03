@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+<html lang="en">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" rel="stylesheet"></script>
+-->
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.image-frame').hover(function(){
+    $('.image-caption',this).slideToggle('slow');
+  }, function(){
+    $('.image-caption',this).slideToggle('slow');
+  });
+});
+</script>
+
+<br>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="img-responsive center-block"  src="image/home1.jpg" alt="home1">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block"  src="image/home2.jpg" alt="home2"  >
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block"  src="image/home3.jpg" alt="home3" >
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container">
+  <h3>Image</h3>
+  <!-- <p>We sell clean food.</p> -->
+</div>
+<div class="text-center">
+  <div class="row">
+    <div class = "col-md-3 col-sm-6 col-xs-12">
+
+      <div class="image-frame">
+        <img src="image/clean_food/chicken_curry.jpg" class="img-rounded" alt="chicken curry" width="250" height="236">
+        <div class="image-caption">
+          <h2>Chicken Curry</h2>
+          <!-- Mouse over Slide 1 to view the caption. -->
+        </div>
+      </div>
+
+    </div>
+    <div class = "col-md-3 col-sm-6 col-xs-12">
+      <div class="image-frame">
+        <img src="image/clean_food/dry_chicken_tom_yum.jpg" class="img-rounded" alt="dry chicken tom yum" width="250" height="236">
+        <div class="image-caption">
+          <h2>Dry Chicken Tom yum</h2>
+          <!-- Mouse over Slide 1 to view the caption. -->
+        </div>
+      </div>
+    </div>
+
+    <div class = "col-md-3 col-sm-6 col-xs-12">
+      <div class="image-frame">
+        <img src="image/clean_food/fresh_spring_roll.jpg" class="img-rounded" alt="fresh spring roll" width="250" height="236">
+        <div class="image-caption">
+          <h2>Fresh Spring Roll</h2>
+          <!-- Mouse over Slide 1 to view the caption. -->
+        </div>
+      </div>
+    </div>
+
+    <div class = "col-md-3 col-sm-6 col-xs-12">
+      <div class="image-frame">
+        <img src="image/clean_food/fried_chayote_with_egg_and_minced_chicken.jpg" class="img-rounded" alt="fried_chayote_with_egg_and_minced_chicken Terre" width="250" height="236">
+        <div class="image-caption">
+          <h2>Fried Chayote With Egg and Chicken</h2>
+          <!-- Mouse over Slide 1 to view the caption. -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class = "col-md-3 col-sm-6 col-xs-12">
+      <div class="image-frame">
+        <img src="image/clean_food/fried_chicken_with_ginger.jpg" class="img-rounded" alt="fried chicken with ginger" width="250" height="236">
+        <div class="image-caption">
+          <h2>Fried Chicken With Ginger</h2>
+          <!-- Mouse over Slide 1 to view the caption. -->
+        </div>
+      </div>
+    </div>
+    <div class = "col-md-3 col-sm-6 col-xs-12">
+      <div class="image-frame">
+        <img src="image/clean_food/fried_vegetable_with_shrimp.jpg" class="img-rounded" alt="fired vet shrimp" width="250" height="236">
+        <div class="image-caption">
+          <h2>Fried Vegetable With Shrimp</h2>
+          <!-- Mouse over Slide 1 to view the caption. -->
+        </div>
+      </div>
+    </div>
+    <div class = "col-md-3 col-sm-6 col-xs-12">
+      <div class="image-frame">
+        <img src="image/clean_food/kua_king.jpg" class="img-rounded" alt="kua king" width="250" height="236">
+        <div class="image-caption">
+          <h2>Kua King</h2>
+          <!-- Mouse over Slide 1 to view the caption. -->
+        </div>
+      </div>
+    </div>
+    <div class = "col-md-3 col-sm-6 col-xs-12">
+      <div class="image-frame">
+        <img src="image/clean_food/red_tilapia_steam_with_lemon.jpg" class="img-rounded" alt="red tilapia" width="250" height="236">
+        <div class="image-caption">
+          <h2>Red Tilapia Steam With Lemon</h2>
+          <!-- Mouse over Slide 1 to view the caption. -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class = "col-md-3 col-sm-6 col-xs-12">
+    <img src="image/clean_food/spicy_fried_sea_bass.jpg" class="img-rounded" alt="spicy fried" width="250" height="236">
+  </div>
+  <img src="image/clean_food/spicy_roasted_chicken_salad.jpg" class="img-rounded" alt="spicy roasted" width="250" height="236"> -->
+
+<br><br>
+</div>
+
+
+<!--  <script src='index.js'></script>-->

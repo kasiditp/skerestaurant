@@ -1,0 +1,182 @@
+/*.navbar-nav > li > a, .navbar-brand {*/
+/*padding-top:25px !important;*/
+/*padding-bottom:0px !important;*/
+/*height: 70px;*/
+/*}*/
+/*.navbar {min-height:28px !important;}*/
+
+.navbar-default {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+  font-size: 25px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffbbbc;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffbbbc;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffbbbc;
+  background-color: #c0392b;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffbbbc;
+  background-color: #c0392b;
+}
+.navbar-default .navbar-toggle {
+  border-color: #c0392b;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #c0392b;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffbbbc;
+}
+/*767*/
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbbbc;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #c0392b;
+  }
+}
+
+
+body{
+  /*background:url('http://photovectorgraphic.com/uploads/Background-Food-Spices-2/Background-Food-Spices-2_147.jpg');*/
+  background-color:rgba(251,245,239,.8);
+  padding:50px;
+}
+
+#login-dp{
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+  font-size:12px
+}
+#login-dp .bottom{
+  background-color:rgba(255,255,255,.8);
+  border-top:1px solid #ddd;
+  clear:both;
+  padding:14px;
+}
+#login-dp .social-buttons{
+  margin:12px 0
+}
+#login-dp .social-buttons a{
+  width: 49%;
+}
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+.btn-fb{
+  color: #fff;
+  background-color:#3b5998;
+}
+.btn-fb:hover{
+  color: #fff;
+  background-color:#496ebc
+}
+.btn-tw{
+  color: #fff;
+  background-color:#55acee;
+}
+.btn-tw:hover{
+  color: #fff;
+  background-color:#59b5fa;
+}
+@media(max-width:768px){
+  #login-dp{
+    background-color: inherit;
+    color: #fff;
+  }
+  #login-dp .bottom{
+    background-color: inherit;
+    border-top:0 none;
+  }
+}
+
+.modal-body {
+  max-width: : 100px;
+  /*max-height: 800px;*/
+}
+
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.carousel-indicators li {
+  /*display: inline-block;*/
+  /*width: 48px;*/
+  /*height: 48px;*/
+  /*margin: 10px;*/
+  /*text-indent: 0;*/
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #000000;
+  /*background-image: none*/
+  /*box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0);*/
+}
+.carousel-control.left, .carousel-control.right {
+  background-image:none !important;
+  filter:none !important;
+}
+
+/*test fade pic*/
+.image-frame {
+	/*float: left;*/
+	position: relative;
+	margin-left: 50px;
+	color: #333;
+}
+.image-frame .image-caption {
+	display: none;
+	opacity: 0.8;
+	background:#ecf0f1;
+	width: 260px;
+	position: absolute;
+	bottom: 0px;
+	padding: 10px;
+}

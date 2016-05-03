@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chart</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/chart/Chart.js"></script>
+
+  <style>
+  canvas{
+        width: 100% !important;
+        max-width: 500px;
+        height: auto !important;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="col-md-12 text-center">
+    <canvas id="myChart" class="chart" height="300" width="300"></canvas>
+  </div>
+  <script>
+  // var Chart = require('js/chart/node_modules/chart.js')
+  var ctx = $("#myChart").get(0).getContext("2d");
+  ctx.textAlign='center';
+  var data = {
+    labels: [
+      "Chicken Curry",
+      "Dry Chicken Tom Yum",
+      "Fresh Spring Roll",
+      "Fried Chayote With Egg And Minced Chicken",
+      "Fried Chicken With Ginger",
+      "Fried Vegetable With Shrimp",
+      "Kua King",
+      "Red Tilapia Steam With Lemon",
+      "Spicy Fried Sea Bass",
+      "Spicy Roasted Chicken Salad",
+      "Steam Egg With Chicken And Shrimp",
+      "Tofu Garnish With Minced Chicken"
+    ],
+    datasets: [
+      {
+        data: [total_sell_amount[0], total_sell_amount[1], total_sell_amount[2],total_sell_amount[3],total_sell_amount[4],total_sell_amount[5],total_sell_amount[6],total_sell_amount[7],total_sell_amount[8],total_sell_amount[9],total_sell_amount[10],total_sell_amount[11]],
+        backgroundColor: [
+          "#172a54",
+          "#7218bf",
+          "#bd006c",
+          "#df1e00",
+          "#f96500",
+          "#fbb500",
+          "#fcfd34",
+          "#278a1e",
+          "#094522",
+          "#0863bc",
+          "#009e9f",
+          "#00a3e7"
+        ],
+        hoverBackgroundColor: [
+          "#172a54",
+          "#7218bf",
+          "#bd006c",
+          "#df1e00",
+          "#f96500",
+          "#fbb500",
+          "#fcfd34",
+          "#278a1e",
+          "#094522",
+          "#0863bc",
+          "#009e9f",
+          "#00a3e7"
+        ]
+      }]
+    };
+
+    var myChart = new Chart(ctx, {
+      type: 'doughnut',
+      animation:{
+        animateScale:true
+      },
+      data,
+      option :{
+        responsive: false,
+        maintainAspectRatio: true
+      }
+    });
+
+    </script>
+  </body>
+  </html>
